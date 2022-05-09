@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+}
+
+.animation-itself {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100vh;
+    background: url(city.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+    .bird {
+        position: absolute;
+        width: 100px;
+        height: 69px;
+        top: 3%;
+        left: -10%;
+        background:url(bird.png);
+        z-index: 1;
+        animation: birdAnimation 2s steps(4) infinite, birdMove 8s linear 3;
+    }
+        @keyframes birdAnimation {
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: 400px;
+            }
+        }
+        @keyframes birdMove {
+            0%{
+                left: -10%;
+            }
+            100%{
+                left: 100%;
+            }
+        }
+    
+    .car1 {
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 29%;
+        left: -50%;
+        background:url(rredcar.png);
+        z-index: 3;
+        animation: car1Move 5s linear 3s;
+    }
+        @keyframes car1Move{
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+    .car2 {
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 27%;
+        left: -50%;
+        background:url(rgreencar.png);
+        z-index: 3;
+        animation: car2Move 7s linear 16s;
+    }
+        @keyframes car2Move{
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+    .car3 {
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 18%;
+        right: -50%;
+        background:url(lblackcar.png);
+        z-index: 2;
+        animation: car3Move 5s linear 7s;
+    }
+        @keyframes car3Move{
+            0% {
+                right: -50%;
+            }
+            100% {
+                right: 150%;
+            }
+        }
+
+    .car4 {
+        position: absolute;
+        width: 640px;
+        height: 320px;
+        top: 18%;
+        right: -50%;
+        background:url(lbluecar.png);
+        z-index: 2;
+        animation: car4Move 5s linear 12s;
+    }
+        @keyframes car4Move{
+            0% {
+                right: -50%;
+            }
+            100% {
+                right: 150%;
+            }
+        }
+
+    .boy {
+        position: absolute;
+        width: 128px;
+        height: 118px;
+        top: 28%;
+        left: -10%;
+        background:url(boy.png);
+        z-index: 1;
+        animation: boyAnimation 1s steps(15) infinite reverse, boyMove 20s linear;
+    }
+        @keyframes boyAnimation {
+            0% {
+                background-position: 0;
+            }
+            100% {
+                background-position: 1920px;
+            }
+        }
+        @keyframes boyMove {
+            0% {
+                left: -10%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+    .girl {
+        position: absolute;
+        width: 96px;
+        height: 105px;
+        top: 58%;
+        left: -10%;
+        background:url(girl.png);
+        animation: girlAnimation 1s steps(20) infinite, girlMove 18s linear 10s;
+        z-index: 4;
+    }
+        @keyframes girlAnimation {
+            0% {
+                background-position: 0;
+            }
+            100% {
+                background-position: 1920px;
+            }
+        }
+        @keyframes girlMove {
+            0% {
+                left: -10%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
